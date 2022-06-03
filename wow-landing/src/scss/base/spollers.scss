@@ -1,0 +1,96 @@
+// Базовые стили спойлеров
+// Сниппет (HTML): spoller
+
+.l-spollers{
+  padding: 120px 0px;
+	@media (max-width: 998px) {
+		padding: 80px 0px;
+	}
+	@media (max-width: 798px) {
+		padding: 0px 0px 140px 0px;
+	}
+}
+
+.b-spollers{
+
+	&__title{
+		font-size: 35px;
+		line-height: 38px;
+		color: #000000;
+		font-family: AnoBold;
+		font-weight: bold;
+
+		@media (max-width: 798px) {
+			text-align: center;
+		}
+	}
+}
+
+// Блок со спойлерами
+.spollers {
+	display: grid;
+	margin-top: 60px;
+}
+// Спойлер
+.spollers__item {
+	font-size: rem(20);
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	padding: 20px;
+
+	@media (max-width: 798px) {
+		padding: 20px 0px;
+	}
+
+	&:not(:last-child){
+		border-bottom: 0px solid #000;
+	}
+}
+// Заголовок спойлера
+.spollers__title {
+	width: 100%;
+	cursor: default;
+	text-align: left;
+	padding: rem(10) rem(36) rem(10) rem(15);
+	border-radius: rem(5);
+	position: relative;
+	font-size: 22px;
+	line-height: 25px;
+	font-family: inherit;
+	@media (max-width: 798px) {
+		padding-left: 0;
+	}
+	
+	._spoller-init & {
+		cursor: pointer;
+		&::after {
+			content: "";
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			width: 36px;
+			transform: translateY(-50%);
+			background-size: 22px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 11H22' stroke='black' stroke-width='3'/%3E%3Cpath d='M11 0L11 22' stroke='black' stroke-width='3'/%3E%3C/svg%3E%0A");
+			height: 36px;
+			transition: 0.3s ease 0s;
+		}
+		&._spoller-active {
+			&::after {
+				background-size: 36px;
+				transform: translateY(-50%) rotate(-90deg);
+				background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='18' cy='18' r='18' fill='%23D9D9D9'/%3E%3Cpath d='M10.2217 10.2218L25.778 25.7782' stroke='white' stroke-width='3'/%3E%3Cpath d='M25.7783 10.2218L10.222 25.7781' stroke='white' stroke-width='3'/%3E%3C/svg%3E%0A");
+			}
+		}
+	}
+}
+// Контент спойлера
+.spollers__body {
+	padding: rem(20);
+	border-radius: rem(5);
+	@media (max-width: 798px) {
+		padding: rem(20) rem(0);
+	}
+}

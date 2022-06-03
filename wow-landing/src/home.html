@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"WOW Moments by Corite - Coming Soon!"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="l-banner -banner-ibg">
+				<picture>
+					<source srcset="img/banner.webp" type="image/webp"><img class="-blur" src="img/banner.png" alt="">
+				</picture>
+				<svg class="icon -mask-banner">
+					<use xlink:href="img/sprite/sprite.svg#Mask"></use>
+				</svg>
+				<div class="b-banner">
+					<video muted autoplay loop playsinline poster="img/banner.png">
+						<source src="./video/video.mp4">
+					</video>
+					<img class="-view__descktop" src="img/banner.png" alt="">
+					<img class="-view__mobile" src="img/mobile-banner.png" alt="">
+
+					<div class="b-svgWrap">
+						<svg class="icon -title">
+							<use xlink:href="img/sprite/sprite.svg#title"></use>
+						</svg>
+						<svg class="icon -subTitle">
+							<use xlink:href="img/sprite/sprite.svg#subTitle"></use>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<footer class="l-footer">
+
+				<h1 class="b-title _container">
+					LOREM IPSUM <br>
+					<span>LOREM IPSUM</span>
+				</h1>
+
+				<div class="b-footer__info _container">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate enim eget tempor mauris. Quam nulla nibh
+						lectus lectus. Ut tincidunt varius pellentesque viverra accumsan tristique sed mattis. Mi posuere interdum
+						fermentum ultricies pretium. Dolor varius pulvinar ipsum etiam ut vitae, aenean mattis odio. Augue enim, sit
+						tempus lobortis mattis ultricies eu.</p>
+				</div>
+
+				<div class="b-footer__form _container">
+					<form action="#">
+						<div class="b-footer__label">Sign up for udpates:</div>
+						<input type="email" name="" placeholder="Enter your email address" required>
+						<button class="btn">SEND</button>
+					</form>
+				</div>
+				<div class="b-footer__sponsors">
+					<div class="b-footer__sponsorsWrap _container">
+						<svg class="icon">
+							<use xlink:href="img/sprite/sprite.svg#Coca"></use>
+						</svg>
+						<svg class="icon -litle-icon">
+							<use xlink:href="img/sprite/sprite.svg#sj"></use>
+						</svg>
+						<svg class="icon">
+							<use xlink:href="img/sprite/sprite.svg#otly"></use>
+						</svg>
+					</div>
+				</div>
+			</footer>
+
+			<div class="l-spollers">
+				<div class="b-spollers _container">
+					<h2 class="b-spollers__title">
+						Questions & Answers
+					</h2>
+					<div data-spollers data-one-spoller class="spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Lorem ipsum?</button>
+							<div class="spollers__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate enim eget tempor mauris. Quam nulla nibh lectus lectus. Ut tincidunt varius pellentesque viverra accumsan tristique sed mattis. Mi posuere interdum fermentum ultricies pretium. Dolor varius pulvinar ipsum etiam ut vitae, aenean mattis odio. Augue enim, sit tempus lobortis mattis ultricies eu.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Lorem ipsum?</button>
+							<div class="spollers__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate enim eget tempor mauris. Quam nulla nibh lectus lectus. Ut tincidunt varius pellentesque viverra accumsan tristique sed mattis. Mi posuere interdum fermentum ultricies pretium. Dolor varius pulvinar ipsum etiam ut vitae, aenean mattis odio. Augue enim, sit tempus lobortis mattis ultricies eu.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Lorem ipsum?</button>
+							<div class="spollers__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate enim eget tempor mauris. Quam nulla nibh lectus lectus. Ut tincidunt varius pellentesque viverra accumsan tristique sed mattis. Mi posuere interdum fermentum ultricies pretium. Dolor varius pulvinar ipsum etiam ut vitae, aenean mattis odio. Augue enim, sit tempus lobortis mattis ultricies eu.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Lorem ipsum?</button>
+							<div class="spollers__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate enim eget tempor mauris. Quam nulla nibh lectus lectus. Ut tincidunt varius pellentesque viverra accumsan tristique sed mattis. Mi posuere interdum fermentum ultricies pretium. Dolor varius pulvinar ipsum etiam ut vitae, aenean mattis odio. Augue enim, sit tempus lobortis mattis ultricies eu.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Lorem ipsum?</button>
+							<div class="spollers__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate enim eget tempor mauris. Quam nulla nibh lectus lectus. Ut tincidunt varius pellentesque viverra accumsan tristique sed mattis. Mi posuere interdum fermentum ultricies pretium. Dolor varius pulvinar ipsum etiam ut vitae, aenean mattis odio. Augue enim, sit tempus lobortis mattis ultricies eu.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Lorem ipsum?</button>
+							<div class="spollers__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate enim eget tempor mauris. Quam nulla nibh lectus lectus. Ut tincidunt varius pellentesque viverra accumsan tristique sed mattis. Mi posuere interdum fermentum ultricies pretium. Dolor varius pulvinar ipsum etiam ut vitae, aenean mattis odio. Augue enim, sit tempus lobortis mattis ultricies eu.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
